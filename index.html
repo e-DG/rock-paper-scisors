@@ -10,7 +10,7 @@
     <script>
         console.log("Hello world!");
 
-        const options = ["Rock", "Paper", "Scissors"];
+        const options = ["rock", "paper", "scissors"];
 
         function getComputerChoice(array) {
             
@@ -18,8 +18,29 @@
             let choice = array[randomChoice];
         }
 
-        function playRound(playesSelection, computerSelection) {
+        function playRound(playerSelection, computerSelection) {
             
+            if (playerSelection === computerSelection) {
+                console.log("Its a tie!");
+            }
+            else if(playerSelection === "scissors" && computerSelection === "paper") {
+                console.log("You win!");
+            }
+            else if (playerSelection === "scissors" && computerSelection === "rock") {
+                console.log("You lost!");
+            } 
+            else  if(playerSelection === "paper" && computerSelection === "rock") {
+                console.log("You win!");
+            }
+            else  if(playerSelection === "paper" && computerSelection === "scissors") {
+                console.log("You lost!");
+            }
+            else  if(playerSelection === "rock" && computerSelection === "paper") {
+                console.log("You lost!");
+            }
+            else  if(playerSelection === "rock" && computerSelection === "scissors") {
+                console.log("You win!");
+            }
         }
 
        </script>
