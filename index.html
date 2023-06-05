@@ -9,10 +9,19 @@
 <body>
     <script>
         console.log("Hello world!");
-        const ComputerChoice = ["Rock", "Paper", "Scissors"];
-        function getComputerChoice() {
-            let randomChoice = ComputerChoice[Math.floor(Math.random() * 3)];
+
+        const options = ["Rock", "Paper", "Scissors"];
+
+        function getComputerChoice(array) {
+            
+            let randomChoice = [Math.floor(Math.random() * array.length)];
+            let choice = array[randomChoice];
         }
-    </script>
+
+        function playRound(playesSelection, computerSelection) {
+            
+        }
+
+       </script>
 </body>
 </html>
